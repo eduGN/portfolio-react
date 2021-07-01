@@ -1,0 +1,339 @@
+
+.main-container {
+    margin-left: 5rem;
+    position: absolute;
+}
+
+.about-me, .education, .skills, .projects, .contact{
+    padding-top: 2.5rem;
+}
+.footer{
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.main-container, .introduction, .about-me, .education, .skills, .projects, .contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.introduction{
+    margin-bottom: 7.5rem;
+    width: 100%;
+}
+.about-me, .education, .skills, .projects, .contact{
+    margin-top: 7.5rem;
+}
+
+.img-profile-container{
+    display: block;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    height: 17.5rem;
+    background-color: var(--bg-img);
+    clip-path: ellipse(57% 100% at 43% 0%);
+}
+
+.img-profile{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 0.3rem solid var(--text-secondary);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1{
+    font-family: "Architects Daughter", cursive;
+    font-weight:700 ;
+    font-size: 2.25rem;
+}
+
+h1 > span{
+   font-weight: 900 ;
+   color: var(--icon-primary)
+}
+
+h1 + p {
+    color: var(--body-secondary);
+    font-size: 1.15rem;
+    line-height: 100%;
+    
+}
+
+.introduction p:nth-of-type(2), .introduction p:last-of-type {
+    color: var(--body-secondary);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: -0.25rem;
+    
+}
+
+.icon{
+  color: var(--icon-primary);
+ /*  font-size: 1rem; */
+}
+
+.icon-l{
+
+    font-size: 1.5rem;
+}
+
+.arrow-down{
+   font-size: 1.25rem;
+   animation-name: fade;
+   animation-delay: calc(var(--order)*200ms);
+   animation-duration: calc(var(--transition-speed)*3);
+   animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+
+    from{
+        color:var(--icon-primary);
+        font-weight: 900;
+    }
+
+    to{color: transparent}
+    
+}
+
+.about-me {
+    margin-top: 5rem;
+}
+
+h2 {
+
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--icon-primary);
+    margin-bottom: 3rem;
+
+}
+
+.about-me p{
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--body-primary);
+    text-align: justify;
+    margin-top: 3rem;
+
+}
+
+#education > h2 + * + p, #skills  h2 + * + p  {
+
+    filter: grayscale(100%);
+    font-size: 0.85rem;
+    margin-bottom: 3rem;
+}
+
+.btn-contact, .download-cv {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+}
+
+.btn-contact * span {
+    margin-right: 0.75rem ;
+}
+
+/* .download-cv * div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ */
+.download-cv * div > span{
+    margin-right: 0.75rem;
+  }
+  
+
+.education-group{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.education-group p{
+    max-width: 6rem;
+    max-height: 3rem;
+    font-size: 0.85rem;
+}
+
+.education-title{
+    text-align:right;
+    font-weight: 700;
+    transform: translateY(-1rem)
+}
+
+.education-school{
+    text-align:left;
+    filter: grayscale(100%);
+    font-size: 0.75rem;
+    transform: translateY(1rem)
+}
+
+.education-school > span{
+   font-weight: 700;
+}
+
+.dot-line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+
+.vertical-line{
+   width: 0.10rem;
+   height: 14rem;
+   background-color: var(--icon-primary);
+}
+
+.skills-type{
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.skills-type:hover{
+    background-color: var(--bg-hover);
+}
+
+.skills-type h4{
+    margin: 0 4rem;
+    margin-left: 0.5rem;
+    font-size: 1.25rem; 
+}
+
+#skills-type-list{
+    padding: 2.5rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(1rem);
+    transition:  opacity calc(var(--transition-speed)*2) ease-in;
+}
+
+h4 > em{
+   visibility: hidden;
+}
+
+
+@media screen and (min-width: 481px) {
+
+    :root{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    :root{
+        font-size: 20px;
+    }
+
+    .main-container {
+        margin-top: 6rem;
+        margin-left: 0;
+        padding-top: 0rem;
+        width: 100%;
+    }
+
+    .about-me, .education, .skills, .projects, .contact{
+        margin-top: 15rem;
+    }
+
+   
+
+    .about-me p{
+        margin: 0 5rem;
+        font-size: 1rem;
+        text-align: justify;
+        margin-top: 4rem;
+    }
+    .skills-type h4{
+        margin: 0 4rem;
+        margin-left: 1.5rem;
+        font-size: 1.35rem; 
+    }
+
+}
+
+@media screen and (min-width: 1020px) {
+
+    :root{
+        font-size: 22px;
+    }
+
+
+    .about-me, .education, .skills, .projects, .contact{
+        margin-top: 15rem;
+    }
+
+   
+
+    .about-me p{
+        margin: 0 7.5rem;
+        font-size: 1.25rem;
+        text-align: justify;
+        margin-top: 4rem;
+    }
+    .skills-type h4{
+        margin: 0 4rem;
+        margin-left: 1.5rem;
+        font-size: 1.35rem; 
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+
+    
+
+    .skills-grid{
+        display: flex;
+    }
+
+    .card-projects{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    :root{
+        font-size: 26px;
+    }
+
+    /* .main-container {
+        margin-top: 7.5rem;
+    }
+ */
+    .about-me, .education, .skills, .projects, .contact{
+        margin-top: 17rem;
+    }
+
+  
+
+    .about-me p{
+        margin: 0 12.5rem;
+        font-size: 1rem;
+        text-align: justify;
+        margin-top: 4rem;
+    }
+    .skills-type h4{
+        margin: 0 4rem;
+        margin-left: 1.5rem;
+        font-size: 1.35rem; 
+    }
+
+}
