@@ -71,7 +71,7 @@ label + input:focus{
 .contact-data{
     display: flex;
     flex-direction: column;
-    margin-left: 2.5rem;
+    margin-left: 1.5rem;
 }
 
 .contact-data span:first-of-type{
