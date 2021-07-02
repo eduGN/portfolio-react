@@ -249,13 +249,13 @@ function MainHome() {
 
           <div className="card-projects" data-aos="fade-up">
             <CardProject data-aos="fade-up" title="Portfolio Personal" img="./assets/img/profileimg.jpg" bodyText="Sitio web totalmente responsive con toda mi
-            información personal desarrollado en React." href="https://www.spotify.com" />
+            información personal desarrollado en React." href="https://github.com/eduGN/portfolio-react" />
 
             <CardProject data-aos="fade-up" title="Garito" img="./assets/img/garito.png" bodyText="Espacio para todos los músicos locales que se quieren dar
-            a conocer. Actualmente en desarrollo utilizando el MEAN stack" href="https://www.spotify.com" />
+            a conocer. Actualmente en desarrollo utilizando el MEAN stack" href="https://github.com/eduGN/garito-frontend" />
 
             <CardProject data-aos="fade-up" title="Among Us Wiki" img="./assets/img/amongus.jpg" bodyText="Guía completa del juego más famoso del año 2020. 
-            Desarrollado en Android Studio con Kotlin." href="https://www.spotify.com" />
+            Desarrollado en Android Studio con Kotlin." href="https://github.com/eduGN/among-us-wiki" />
 
           </div>
         </div>
