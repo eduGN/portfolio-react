@@ -89,6 +89,10 @@ form > *:last-child{
    width: 7.5rem;
 }
 
+.icon-form {
+  margin-right: 0.5rem;
+}
+
 @media screen and (min-width: 1280px){
 
 
