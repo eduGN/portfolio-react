@@ -3,14 +3,13 @@ import emailjs, { init } from 'emailjs-com';
 import './FormContact.css';
 import Button from '../button/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faMapMarker, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faMapMarker, faPaperPlane, faPhone, faSign, faUser, faComment } from '@fortawesome/free-solid-svg-icons';
 import Swal from 'sweetalert2';
 
 function FormContact() {
 
     const sendEmail = (e) => {
 
-        
         const template = process.env.REACT_APP_EMAIL_TEMPLATE
         const user_id = process.env.REACT_APP_EMAIL_USER_ID
         const service_id = process.env.REACT_APP_EMAIL_SERVICE_ID
@@ -66,29 +65,29 @@ function FormContact() {
             </div> 
             <form onSubmit={sendEmail} className="form-container">
                 <div className="form-row">
-                    <label htmlFor="">Nombre</label>
+                    <label htmlFor=""><FontAwesomeIcon className="icon-form" icon={faUser}/> Nombre</label>
                     <input type="text" name="name" />
                     
                 </div>
 
                 <div className="form-row">
-                    <label htmlFor="">Email</label>
+                    <label htmlFor=""><FontAwesomeIcon className="icon-form" icon={faEnvelope}/> Email</label>
                     <input type="email" name="email" />
                     
                 </div>
 
                 <div className="form-row">
-                    <label htmlFor="">Asunto</label>
+                    <label htmlFor=""><FontAwesomeIcon className="icon-form" icon={faSign}/> Asunto</label>
                     <input type="text" name="subject" />
                     
                 </div>
 
                 <div className="form-row">
-                    <label htmlFor="">Mensaje</label>
+                    <label htmlFor=""><FontAwesomeIcon className="icon-form" icon={faComment}/> Mensaje</label>
                     <textarea name="message" id="" cols="auto" rows="10"></textarea>
                 </div>
 
-                <Button buttonSize="btn-medium" buttonStyle="btn-primary">Enviar</Button>
+                <Button buttonSize="btn-medium" buttonStyle="btn-primary"><FontAwesomeIcon className="icon-form" icon={faPaperPlane}/> Enviar</Button>
             </form>
         </div>
       
